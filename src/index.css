@@ -1,0 +1,109 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Movie Card Layout */
+.movie-card {
+  border: 1px solid #ccc;
+  margin: 20px;
+  padding: 15px;
+  width: 220px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.movie-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Image Style */
+.movie-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Button Styles */
+.movie-card button {
+  padding: 8px 15px;
+  margin: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+/* Rating and Buttons Layout */
+.rating-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+/* Button Container Layout */
+.button-container {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  align-items: center;
+  gap: 10px;
+}
+
+/* Button Hover Effects */
+.movie-card button:hover {
+  opacity: 0.8;
+}
+
+.fav-btn {
+  background-color: #ff5722;
+  color: white;
+}
+
+.cart-btn {
+  background-color: #f9a825;
+  color: white;
+}
+
+.increase-star-btn {
+  background-color: #1bc059;
+  color: white;
+}
+
+.decrease-star-btn {
+  background-color: #0d47a1;
+  color: white;
+}
+
+/* Container for Movie Cards */
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+}
+
+.navbar .cart-count {
+  font-weight: bold;
+  color: #f9a825;
+}
