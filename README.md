@@ -75,27 +75,6 @@ MovieFlix is a sleek and modern movie browsing application that allows users to 
   - Subtle hover effects for buttons.
   - Fade-in animations for modals and titles.
 
-## Folder Structure
-
-```
-movieflix/
-├── src/
-│   ├── components/
-│   │   ├── Navbar.js
-│   │   ├── MovieCard.js
-│   │   ├── PaymentWindow.js
-│   ├── assets/
-│   │   └── favicon.png
-│   ├── styles/
-│   │   └── global.css
-│   ├── App.js
-│   ├── index.js
-├── public/
-│   ├── index.html
-│   └── manifest.json
-└── package.json
-```
-
 ## Future Enhancements
 
 - **Search Functionality**: Allow users to search for movies by title.
