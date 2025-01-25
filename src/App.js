@@ -7,6 +7,7 @@ import { movies as initialMovies } from "./moviesdata";
 const App = () => {
   const [movies, setMovies] = useState(initialMovies); // Initialize movies state
   const [cartCount, setCartCount] = useState(0);       // Initialize cartCount state
+  const [totalBill, setTotalBill] = useState(0);       // Initialize totalBill state
 
   const incStar = (movie) => {
     const updatedMovies = movies.map((m) =>
@@ -34,6 +35,9 @@ const App = () => {
       if (m.id === movie.id) {
         const updatedCartState = !m.cart;
         setCartCount((prevCount) => prevCount + (updatedCartState ? 1 : -1));
+        setTotalBill((prevTotal) => 
+          updatedCartState ? prevTotal + movie.price : prevTotal - movie.price
+        );
         return { ...m, cart: updatedCartState };
       }
       return m;
@@ -43,7 +47,7 @@ const App = () => {
 
   return (
     <>
-      <Navbar cartCount={cartCount} />
+      <Navbar cartCount={cartCount} totalBill={totalBill} />
       <MovieList
         movies={movies}
         addstar={incStar}

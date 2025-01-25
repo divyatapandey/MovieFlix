@@ -11,7 +11,7 @@ body {
   border: 1px solid #ccc;
   margin: 20px;
   padding: 15px;
-  width: 220px;
+  width: 240px;
   text-align: center;
   background-color: #fff;
   border-radius: 10px;
@@ -27,11 +27,11 @@ body {
 .movie-card img {
   width: 100%;
   border-radius: 8px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 /* Button Styles */
-.movie-card button {
+.button-container button {
   padding: 8px 15px;
   margin: 5px;
   font-size: 14px;
@@ -47,16 +47,32 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  margin-top: -8px;
+}
+
+.rating-container button{
+  all: unset; /* Resets all styles */
+  font-size: 16px; /* Set your desired font size */
+  font-weight: bold; /* Optional: makes text bold */
+  text-align: center; /* Center the text */
+  cursor: pointer; /* Makes it clickable */
+  display: inline-block; /* Makes the button inline like text */
+  color: inherit; /* Inherit text color from parent */
+  background-color: transparent; /* Makes the background transparent */
+  padding: 0; /* Remove padding */
+  border: none; /* Remove border */
+  outline: none; /* Remove outline */
+  margin-bottom: -9px;
+  padding: 5px;
 }
 
 /* Button Container Layout */
 .button-container {
   display: flex;
-  flex-direction: column; /* Stack buttons vertically */
+  flex-direction: row; /* Stack buttons vertically */
   align-items: center;
-  gap: 10px;
+  gap: 3px;
 }
 
 /* Button Hover Effects */
@@ -64,32 +80,30 @@ body {
   opacity: 0.8;
 }
 
-.fav-btn {
-  background-color: #ff5722;
+.fav-btn { 
+  background-color: #18a867;
   color: white;
 }
 
 .cart-btn {
-  background-color: #f9a825;
+  background-color: #106191;
   color: white;
 }
 
-.increase-star-btn {
-  background-color: #1bc059;
-  color: white;
+/* .increase-star-btn {
+  background:none;
 }
 
 .decrease-star-btn {
-  background-color: #0d47a1;
-  color: white;
-}
+  background:none;
+} */
 
 /* Container for Movie Cards */
 .movie-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 20px;
+  padding: 10px;
 }
 
 /* Navbar Styles */

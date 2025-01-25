@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import PaymentWindow from './PaymentWindow';
 
 const Nav = styled.div`
   width: 100%;
@@ -14,6 +15,7 @@ const CartCountContainer = styled.div`
   margin-right: 20px;
   position: relative;
   cursor: pointer;
+  // margin: 8px;
 `;
 
 const CartCount = styled.div`
@@ -28,29 +30,75 @@ const CartCount = styled.div`
 `;
 
 const Title = styled.div`
-  margin-left: 20px;
   font-size: 40px;
   color: #fff;
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
+`;
+
+
+const FaviconWrapper = styled.div`
+  width: 40px;
+  height: 40px;
+  background-color: black; /* Black background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%; /* Optional: to make it round if the image is square */
+  margin-right: 10px;
+`;
+
+const Favicon = styled.img`
+  width: 50px;  /* Adjust image size */
+  height: 50px; /* Adjust image size */
+`;
+
+const TitleContainer = styled.div`
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
 `;
 
 class Navbar extends React.Component {
+  state = { showPayment: false };
+
+  togglePaymentWindow = () => {
+    this.setState({ showPayment: !this.state.showPayment });
+  };
+
   render() {
-    const { cartCount } = this.props;
+    const { cartCount, totalBill } = this.props;
+    const { showPayment } = this.state;
+
     return (
-      <Nav>
-        <Title>MOVIE-FLIX</Title>
-        <CartCountContainer>
-          <img
-            alt="cart-icon"
-            src="https://cdn-icons-png.flaticon.com/128/3514/3514491.png"
-            style={{ height: 48 }}
+      <div>
+        <Nav>
+        <TitleContainer>
+        <FaviconWrapper>
+              <Favicon src="favicon.png" alt="Movie-Flix Logo" />
+            </FaviconWrapper>
+            <Title>MovieFlix</Title>
+          </TitleContainer>
+          <div style={{ display: "flex", alignItems: "center" }}>
+            {/* <TotalBill>Total: ₹{totalBill.toFixed(2)}</TotalBill> */}
+            {/* <PayButton >Pay</PayButton> */}
+            <CartCountContainer onClick={this.togglePaymentWindow}>
+              <img
+                alt="cart-icon"
+                src="https://cdn-icons-png.flaticon.com/128/3514/3514491.png"
+                style={{ height: 48 }}
+              />
+              <CartCount show={cartCount > 0}>{cartCount}</CartCount>
+            </CartCountContainer>
+          </div>
+        </Nav>
+        {showPayment && (
+          <PaymentWindow
+            totalBill={totalBill}
+            closePaymentWindow={this.togglePaymentWindow}
           />
-          <CartCount show={cartCount > 0}>{cartCount}</CartCount>
-        </CartCountContainer>
-      </Nav>
+        )}
+      </div>
     );
   }
 }
