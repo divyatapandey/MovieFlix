@@ -24,7 +24,7 @@ export const movies= [
       poster:
         'https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_SX300.jpg',                  
       rating: '7.9',            
-      price: 139,            
+      price: 249,            
       star: 0,            
       fav: false,
       isInCart: false                  
@@ -34,7 +34,7 @@ export const movies= [
       poster:
              'https://thinkmonsters.com/speakinghuman/media/wp-content/uploads/MOVIE_CaptainAmerica_CivilWar.jpg',                  
       rating: '7.9',            
-      price: 139,            
+      price: 129,            
       star: 0,            
       fav: false,
       isInCart: false                  
@@ -44,7 +44,7 @@ export const movies= [
       poster:
         'https://m.media-amazon.com/images/M/MV5BNjRhNGZjZjEtYTQzYS00OWUxLThjNGEtMTIwMTE2ZDFlZTZkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg',                  
       rating: '7.9',            
-      price: 139,            
+      price: 59,            
       star: 0,            
       fav: false,
       isInCart: false                  
@@ -54,7 +54,7 @@ export const movies= [
       poster:
         'https://preview.redd.it/why-wasnt-the-incredible-hulk-a-box-office-hit-considering-v0-z3bwiql5skae1.png?width=640&crop=smart&auto=webp&s=90c5c3d4051f1b564b8f910c0ac00cb603ba478a',                  
       rating: '7.9',            
-      price: 139,            
+      price: 79,            
       star: 0,            
       fav: false,
       isInCart: false                  
@@ -63,7 +63,7 @@ export const movies= [
       title: 'Shang-Chi',                 
       poster:
         'https://m.media-amazon.com/images/M/MV5BZmY5MDcyNzAtYzg3MC00MGNlLTg3OGItNmRjYThkZGVlNzAyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg',
-      price: 139,            
+      price: 49,            
       star: 0,            
       fav: false,
       isInCart: false                  
@@ -73,7 +73,7 @@ export const movies= [
        poster:
         'https://images-cdn.ubuy.co.in/634cff8dee61a027615ddfa2-posters-usa-marvel-captain-america-the.jpg',                  
       rating: '7.9',            
-      price: 139,            
+      price: 159,            
       star: 0,            
       fav: false,
       isInCart: false                  

@@ -30,17 +30,26 @@ const CartCount = styled.div`
 `;
 
 const Title = styled.div`
-  font-size: 40px;
-  color: #fff;
-  font-weight: 600;
-  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif; /* Modern and clean font */
+  background: linear-gradient(90deg, #ffffff, #e0e0e0); /* Gradient in shades of white */
+  -webkit-background-clip: text; /* Apply gradient to text only */
+  -webkit-text-fill-color: transparent; /* Makes the text transparent to show the gradient */
+  text-transform: uppercase; /* Makes text uppercase for emphasis */
+  letter-spacing: 2px; /* Adds spacing between letters */
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  text-align: center;
+
+}
 `;
+
 
 
 const FaviconWrapper = styled.div`
   width: 40px;
   height: 40px;
-  background-color: black; /* Black background */
+  background-color:#383838; /* Black background */
   display: flex;
   justify-content: center;
   align-items: center;
