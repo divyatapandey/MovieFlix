@@ -1,6 +1,6 @@
 # MovieFlix 
 
-LiveLink: https://movieflix-dgmg.onrender.com
+- LiveLink: https://movieflix-dgmg.onrender.com
 - MovieFlix is a sleek and modern movie browsing application that allows users to explore movie cards, rate their favorites, add movies to their cart, and mark them as favorites. The platform focuses on user-friendly interactivity and responsive design.
 
 ## Features
